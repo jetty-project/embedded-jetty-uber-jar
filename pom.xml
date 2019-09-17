@@ -7,7 +7,7 @@
   <packaging>jar</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jetty-version>9.4.9.v20180320</jetty-version>
+    <jetty-version>9.4.20.v20190813</jetty-version>
   </properties>
   <dependencies>
     <dependency>
@@ -76,13 +76,20 @@
                 <includes>
                   <include>*:*</include>
                 </includes>
+                <excludes>
+                  <!-- avoiding warnings, as theses classes are already part of javax.websocket-api -->
+                  <exclude>javax.websocket:javax.websocket-client-api</exclude>
+                </excludes>
               </artifactSet>
               <filters>
                 <filter>
                   <artifact>*:*</artifact>
                   <excludes>
+                    <!-- excluding license contents -->
                     <exclude>META-INF/VERSION.txt</exclude>
                     <exclude>META-INF/LICENSE.txt</exclude>
+                    <!-- excluding JPMS module definitions -->
+                    <exclude>module-info.class</exclude>
                   </excludes>
                 </filter>
                 <!-- exclude the MANIFEST.MF entries that will cause problems -->
