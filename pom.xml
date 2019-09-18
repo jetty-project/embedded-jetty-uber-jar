@@ -65,7 +65,7 @@
         <version>2.4.1</version>
         <executions>
           <execution>
-            <id>rebuild-war</id>
+            <id>create-uber-jar</id>
             <phase>package</phase>
             <goals>
               <goal>shade</goal>
