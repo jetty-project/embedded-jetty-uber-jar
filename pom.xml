@@ -26,14 +26,14 @@
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
     <license.plugin.version>3.0</license.plugin.version>
 
-    <jetty.version>10.0.0</jetty.version>
+    <jetty.version>11.0.0</jetty.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
-      <version>4.0.3</version>
+      <version>5.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -42,7 +42,7 @@
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty.websocket</groupId>
-      <artifactId>websocket-javax-server</artifactId>
+      <artifactId>websocket-jakarta-server</artifactId>
       <version>${jetty.version}</version>
     </dependency>
     <dependency>
