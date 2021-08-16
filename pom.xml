@@ -24,9 +24,9 @@
     <maven.javadoc.plugin.version>3.2.0</maven.javadoc.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <license.plugin.version>3.0</license.plugin.version>
+    <license.plugin.version>4.1</license.plugin.version>
 
-    <jetty.version>10.0.0</jetty.version>
+    <jetty.version>10.0.2</jetty.version>
   </properties>
 
   <dependencies>
