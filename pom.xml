@@ -27,7 +27,7 @@
     <license.plugin.version>4.1</license.plugin.version>
 
     <log4j.version>2.6.2</log4j.version>
-    <jetty.version>9.4.45.v20220203</jetty.version>
+    <jetty.version>9.4.46.v20220331</jetty.version>
   </properties>
 
   <dependencies>
