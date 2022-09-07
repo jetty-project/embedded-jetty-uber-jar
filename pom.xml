@@ -174,8 +174,8 @@
                   <include>*:*</include>
                 </includes>
                 <excludes>
-                  <!-- avoiding warnings, as theses classes are already part of javax.websocket-api -->
-                  <exclude>javax.websocket:javax.websocket-client-api</exclude>
+                  <!-- avoiding warnings, as theses classes are already part of jakarta.websocket-api -->
+                  <exclude>jakarta.websocket:jakarta.websocket-client-api</exclude>
                 </excludes>
               </artifactSet>
               <filters>
@@ -191,19 +191,19 @@
                 </filter>
                 <!-- exclude the MANIFEST.MF entries that will cause problems -->
                 <filter>
-                  <artifact>javax.annotation:*</artifact>
+                  <artifact>jakarta.annotation:*</artifact>
                   <excludes>
                     <exclude>META-INF/MANIFEST.MF</exclude>
                   </excludes>
                 </filter>
                 <filter>
-                  <artifact>javax.servlet:*</artifact>
+                  <artifact>jakarta.servlet:*</artifact>
                   <excludes>
                     <exclude>META-INF/MANIFEST.MF</exclude>
                   </excludes>
                 </filter>
                 <filter>
-                  <artifact>javax.websocket:*</artifact>
+                  <artifact>jakarta.websocket:*</artifact>
                   <excludes>
                     <exclude>META-INF/MANIFEST.MF</exclude>
                   </excludes>
@@ -249,7 +249,7 @@
                   <version>[3.0.0,)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[1.8,)</version>
+                  <version>[11,)</version>
                   <message>[ERROR] OLD JDK [${java.version}] in use.
                     Jetty ${jetty.version} requires JDK 1.8 or newer</message>
                 </requireJavaVersion>
