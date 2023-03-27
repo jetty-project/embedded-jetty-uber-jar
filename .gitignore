@@ -2,12 +2,19 @@
 .classpath
 .project
 .settings
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
 
 # maven
 target/
 *.versionsBackup
 *.releaseBackup
 bin/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 # common junk
 *.log
@@ -40,6 +47,16 @@ bin/
 
 # netbeans
 /nbproject
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# vscode
+.vscode/
 
 # merge tooling
 *.orig
