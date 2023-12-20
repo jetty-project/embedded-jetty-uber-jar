@@ -27,7 +27,7 @@
     <license.plugin.version>4.3</license.plugin.version>
 
     <servlet.version>5.0.0</servlet.version>
-    <jetty.version>11.0.18</jetty.version>
+    <jetty.version>11.0.19</jetty.version>
   </properties>
 
   <dependencies>
